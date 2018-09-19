@@ -1,4 +1,29 @@
-h1 {
-  color: red; }
+@charset "UTF-8";
+/*header*/
+.portfolio__header__nav {
+  width: 100%;
+  margin: 0 auto; }
+  .portfolio__header__nav__list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+    padding: 0; }
+    .portfolio__header__nav__list__item {
+      width: 25%; }
+      .portfolio__header__nav__list__item__link {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 20px;
+        color: #000000; }
+
+/*main*/
+/*all*/
+.portfolio {
+  font-family: 'Noto Sans JP', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1px; }
 
 /*# sourceMappingURL=style.css.map */

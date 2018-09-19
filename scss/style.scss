@@ -1,3 +1,14 @@
-h1 {
-  color: red;
+
+/*header*/
+@import "header.scss";
+
+/*main*/
+@import "main.scss";
+
+/*all*/
+.portfolio {
+  font-family:'Noto Sans JP', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1px;
 }
