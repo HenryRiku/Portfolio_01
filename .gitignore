@@ -1,3 +1,2 @@
-*.xml
-*.iml
-*.map
+.idea/
+.DS_Store
