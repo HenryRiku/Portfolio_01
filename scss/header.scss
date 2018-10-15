@@ -1,8 +1,15 @@
+@import "mixin.scss";
+
+$font-size: 20px;
+$breakpoint: 640px;
+
 .portfolio__header {
+  font-size: $font-size;
+  width: 90%;
 
   &__nav {
     width: 100%;
-    margin: 0 auto;
+    margin: 15px auto;
 
     &__list {
       display: flex;
@@ -15,10 +22,14 @@
         width: 25%;
 
         &__link {
+          font-family: 'Noto Sans JP';
           display: flex;
           justify-content: center;
           text-decoration: none;
-          font-size: 20px;
+          font-size: 1em;
+          @include max-screen($breakpoint) {
+            font-size: 0.9em;
+          }
           color: #000000;
 
         }

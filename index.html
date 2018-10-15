@@ -2,8 +2,9 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>陸TOのPHOTO</title>
+    <title>RIKKUN OF PHOTO</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
 </head>
 <body class="portfolio">
@@ -11,45 +12,49 @@
         <nav class="portfolio__header__nav">
             <ul class="portfolio__header__nav__list">
                 <li class="portfolio__header__nav__list__item">
-                    <a class="portfolio__header__nav__list__item__link" href="">TOP</a>
+                    <a class="portfolio__header__nav__list__item__link" href="#TOP">TOP</a>
                 </li>
                 <li class="portfolio__header__nav__list__item">
-                    <a class="portfolio__header__nav__list__item__link" href="">ABOUT ME</a>
+                    <a class="portfolio__header__nav__list__item__link" href="#ABOUT">ABOUT</a>
                 </li>
                 <li class="portfolio__header__nav__list__item">
-                    <a class="portfolio__header__nav__list__item__link" href="">PHOTOS</a>
+                    <a class="portfolio__header__nav__list__item__link" href="#PHOTOS">PHOTOS</a>
                 </li>
                 <li class="portfolio__header__nav__list__item">
-                    <a class="portfolio__header__nav__list__item__link" href="">SNS</a>
+                    <a class="portfolio__header__nav__list__item__link" href="#SNS">SNS</a>
                 </li>
             </ul>
         </nav>
     </header>
     <article class="portfolio__main">
-        <section class="portfolio__main__top">
-            <h1 class="portfolio__main__top__title section__title">陸TOのPHOTO</h1>
-            <div class="portfolio__main__top__content">
-
-            </div>
+        <section class="portfolio__main__top" id="TOP">
+                <h1 class="portfolio__main__top__title">
+                    <img class="portfolio__main__top__title__icon" src="image/icon-top.png" alt="top">
+                </h1>
 
         </section>
-        <section class="portfolio__main__about">
-            <h1 class="portfolio__main__about__title section__title">ABOUT</h1>
+        <section class="portfolio__main__about" id="ABOUT">
+            <h2 class="portfolio__main__about__title section__title">
+                <img class="section__title__img" src="image/title-about.png" alt="about">
+            </h2>
             <div class="portfolio__main__about__content">
                 <p class="portfolio__main__about__content__sentence">
-                    どうも、陸人です。呼名はりっくんが主流ですが気に入ったもので呼んでください。使用している機材は
+                    どうも、陸人です。呼名はりっくんが主流ですが気に入ったもので呼んでください。<br><br>
+                    主に女の子のポートレート撮っています。明るく、可愛いらしい写真が多いです。
+                    <br>カメラで写真を撮るのは楽しくてやめられないですね。写真から撮り手を想像できるそんな写真を撮っていきたいです。<br><br>使用している機材は
                 </p>
-                <ul class="portfolio__main__about__content__sentence__list">
-                    <li class="portfolio__main__about__content__sentence__list__item">MAIN:Z6(予定), 58mm/1.4</li>
-                    <li class="portfolio__main__about__content__sentence__list__item">SUB :X-T2, 56mm/1.2R, Utulens, オールドレンズ</li>
+                <ul class="portfolio__main__about__content__list">
+                    <li class="portfolio__main__about__content__list__item">MAIN:Z6(予定), 58mm/1.4</li>
+                    <li class="portfolio__main__about__content__list__item">SUB :X-T2, 56mm/1.2R, Utulens, オールドレンズ</li>
                 </ul>
-                <p>主に女の子のポートレート撮ってます…というかほとんどそれしか撮らないです。明るく、可愛いらしい写真が多いです。なのにサイトはカッコつけw
-                カメラで写真を撮るのが楽しくてやめられないですね。写真から撮り手を想像できるそんな写真を撮っていきたいです。</p>
+                <p class="portfolio__main__about__content__sentence"></p>
             </div>
 
         </section>
-        <section class="portfolio__main__photos">
-            <h1 class="portfolio__main__photos__title section__title">PHOTOS</h1>
+        <section class="portfolio__main__photos" id="PHOTOS">
+            <h2 class="portfolio__main__photos__title section__title">
+                <img class="section__title__img" src="image/title-photos.png" alt="photos">
+            </h2>
             <div class="portfolio__main__photos__content">
                 <ul class="portfolio__main__photos__content__list">
                     <li class="portfolio__main__photos__content__list__item">
@@ -72,9 +77,11 @@
             </div>
 
         </section>
-        <section class="portfolio__main__sns">
-            <h1 class="portfolio__main__sns__title section__title">SNS</h1>
-                <div class="portfolio__main__sns__title section__content">
+        <section class="portfolio__main__sns" id="SNS">
+            <h2 class="portfolio__main__sns__title section__title">
+                <img class="section__title__img" src="image/title-sns.png" alt="sns">
+            </h2>
+                <div class="portfolio__main__sns__content">
                     <table class="portfolio__main__sns__title section__content__table">
                         <tr class="portfolio__main__sns__title section__content__table__row">
                             <td class="portfolio__main__sns__title section__content__table__row__icon">

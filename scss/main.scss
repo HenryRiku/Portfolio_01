@@ -1,0 +1,111 @@
+@import "mixin.scss";
+
+$breakpoint-tb: 960px;
+$breakpoint-sp: 480px;
+
+.portfolio__main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 20px;
+
+  #ABOUT,
+  #PHOTOS,
+  #SNS {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__about__content,
+  &__photos__content,
+  &__sns__content {
+    padding: 0 10%;
+    margin: 0 10%;
+    width: 80%;
+    border-left: 1px solid #323333;
+    border-right: 1px solid #323333;
+  }
+
+  .section__title {
+    max-width: 220px;
+    width: 50%;
+    height: auto;
+
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+}
+
+.portfolio__main__top {
+  height: 500px;
+  @include max-screen($breakpoint-tb) {
+    height: 100vh;
+  }
+  width: 100%;
+  background-image: url("../image/bg-top.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+
+  &__title {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__icon {
+      display: table-cell;
+      margin: auto 0;
+      width: 100%;
+      max-width: 450px;
+      height: auto;
+    }
+
+  }
+
+}
+
+.portfolio__main__about {
+
+  &__content {
+    color: #323333;
+
+    &__sentence {
+      text-align: justify;
+      text-justify: inter-ideograph;
+      font-size: 1em;
+      @include max-screen($breakpoint-sp) {
+        font-size: 0.8em;
+      }
+      line-height: 1.2em;
+    }
+
+    &__list {
+      padding: 5px 0;
+
+      &__item {
+        font-size: 20px;
+      }
+    }
+  }
+
+
+}
+
+.portfolio__main__photos {
+
+}
+
+.portfolio__main__sns {
+
+
+}
