@@ -2,7 +2,12 @@
 /*header*/
 .portfolio__header {
   font-size: 20px;
-  width: 90%; }
+  width: 90%;
+  padding: 5px 0;
+  display: none; }
+  @media screen and (max-width: 480px) {
+    .portfolio__header {
+      display: none; } }
   .portfolio__header__nav {
     width: 100%;
     margin: 15px auto; }
@@ -19,7 +24,7 @@
           display: flex;
           justify-content: center;
           text-decoration: none;
-          font-size: 1em;
+          font-size: 1.5em;
           color: #000000; }
           @media screen and (max-width: 640px) {
             .portfolio__header__nav__list__item__link {
@@ -30,32 +35,36 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  font-size: 20px; }
+  font-size: 23px; }
   .portfolio__main #ABOUT,
   .portfolio__main #PHOTOS,
   .portfolio__main #SNS {
-    width: 90%;
+    width: 85%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 20px;
-    margin-bottom: 20px; }
+    padding-top: 35px;
+    margin-bottom: 30px; }
+    @media screen and (max-width: 960px) {
+      .portfolio__main #ABOUT,
+      .portfolio__main #PHOTOS,
+      .portfolio__main #SNS {
+        width: 80%; } }
   .portfolio__main__about__content, .portfolio__main__photos__content, .portfolio__main__sns__content {
-    padding: 0 10%;
-    margin: 0 10%;
+    padding: 20px 10%;
     width: 80%;
     border-left: 1px solid #323333;
     border-right: 1px solid #323333; }
   .portfolio__main .section__title {
-    max-width: 220px;
-    width: 50%;
+    max-width: 280px;
+    width: 70%;
     height: auto; }
     .portfolio__main .section__title__img {
       width: 100%;
       height: auto; }
 
 .portfolio__main__top {
-  height: 500px;
+  height: 100vh;
   width: 100%;
   background-image: url("../image/bg-top.jpg");
   background-repeat: no-repeat;
@@ -75,7 +84,7 @@
       display: table-cell;
       margin: auto 0;
       width: 100%;
-      max-width: 450px;
+      max-width: 70vh;
       height: auto; }
 
 .portfolio__main__about__content {
@@ -83,23 +92,124 @@
   .portfolio__main__about__content__sentence {
     text-align: justify;
     text-justify: inter-ideograph;
-    font-size: 1em;
-    line-height: 1.2em; }
+    font-size: 0.9em;
+    line-height: 1.4em; }
     @media screen and (max-width: 480px) {
       .portfolio__main__about__content__sentence {
-        font-size: 0.8em; } }
+        font-size: 0.7em; } }
+    .portfolio__main__about__content__sentence span {
+      display: inline-block;
+      width: 100%;
+      text-align: center; }
   .portfolio__main__about__content__list {
     padding: 5px 0; }
     .portfolio__main__about__content__list__item {
-      font-size: 20px; }
+      font-size: 1.0em;
+      line-height: 1.2em; }
+      @media screen and (max-width: 480px) {
+        .portfolio__main__about__content__list__item {
+          font-size: 0.8em; } }
 
+.portfolio__main__photos__content__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%; }
+  .portfolio__main__photos__content__list__item {
+    position: relative;
+    width: 49.5%;
+    margin-bottom: 8px; }
+    @media screen and (max-width: 960px) {
+      .portfolio__main__photos__content__list__item {
+        width: 100%; } }
+    .portfolio__main__photos__content__list__item__img {
+      width: 100%;
+      height: auto; }
+    .portfolio__main__photos__content__list__item:hover .portfolio__main__photos__content__list__item__img {
+      -webkit-filter: blur(3px);
+      filter: blur(3px);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out; }
+    .portfolio__main__photos__content__list__item__mask {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      background-image: url("../image/bg-photo.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: 0;
+      width: 90%;
+      height: 90%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+      .portfolio__main__photos__content__list__item__mask__sentence {
+        font-size: 2em;
+        color: #323333; }
+        @media screen and (max-width: 480px) {
+          .portfolio__main__photos__content__list__item__mask__sentence {
+            font-size: 1.2em; } }
+    .portfolio__main__photos__content__list__item:hover .portfolio__main__photos__content__list__item__mask {
+      opacity: 1;
+      -webkit-transition: .5s ease-in-out;
+      transition: .5s ease-in-out; }
+
+.portfolio__main__sns__content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .portfolio__main__sns__content__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .portfolio__main__sns__content__list__item {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      height: auto;
+      width: 33%; }
+      @media screen and (max-width: 960px) {
+        .portfolio__main__sns__content__list__item {
+          width: 100%;
+          margin-bottom: 25px; } }
+      .portfolio__main__sns__content__list__item__link {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: #323333;
+        text-decoration: none; }
+        .portfolio__main__sns__content__list__item__link__icon {
+          width: 80px;
+          height: 80px; }
+        .portfolio__main__sns__content__list__item__link__title {
+          width: 90%;
+          margin-top: 10px;
+          vertical-align: middle;
+          text-align: center;
+          line-height: 120%;
+          font-size: 20px; }
+          @media screen and (max-width: 480px) {
+            .portfolio__main__sns__content__list__item__link__title {
+              font-size: 15px; } }
+
+/*footer*/
 /*all*/
 .portfolio {
-  font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-family: 'Noto Sans JP', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   color: #323333;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
+  .portfolio__side {
+    position: fixed;
+    top: 25%;
+    right: 1.5%; }
+    .portfolio__side__title {
+      height: 60vh;
+      width: auto; }
 
 /*# sourceMappingURL=style.css.map */

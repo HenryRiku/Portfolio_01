@@ -5,14 +5,28 @@
 /*main*/
 @import "main.scss";
 
+/*footer*/
+@import "footer.scss";
+
 /*all*/
 .portfolio {
-  font-family:游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-family:'Noto Sans JP', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   color: #323333;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  &__side {
+    position: fixed;
+    top: 25%;
+    right: 1.5%;
+
+    &__title {
+      height: 60vh;
+      width: auto;
+    }
+  }
 }
 
 
